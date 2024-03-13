@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Assigment 8 (5)</title>
+</head>
+<body>
+    <script>
+        // Task 5
+        var userValue1 = prompt("Enter your Password")
+        var userValue2 = prompt("Confirm Your Password")
+        if(userValue1 == '' || userValue2 == ''){
+        document.write("Please Enter Your Password")
+        }
+        else if(userValue1 == userValue2){
+        document.write("Your Password is Correct")
+        }
+        else{
+        document.write("Your Password is incorrect")
+        }
+        // Task 6
+        var hour = prompt('Enter a hours')
+        if(hour < 18){
+        document.write(' Good Day')
+        }
+        else{   
+        document.write(' Good Evenning')
+        }
+        // Task 7
+        var user = prompt('Enter time & check mornig/after/evenning 1100,1400,1700,2200')
+        if(user > 0 && user < 1200 ){
+        document.write(" Good Morning")
+        }
+        else if(user > 1200 && user < 1500){
+        document.write(' Good Afternoon')
+        }
+        else if(user > 1500 && user < 1800){
+        document.write(' Good Evenning')
+        }
+        else if(user > 1800 && user < 2400){
+        document.write(' Good Night')
+        }
+        else{
+        document.write(' Please Select Time 1 to 24 hours +0')
+        }
+    </script>
+</body>
+</html>
